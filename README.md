@@ -2,7 +2,7 @@
 Official repository for CVPR 2023 paper: [WSSS via Adversarial Learning of Classifier and Reconstructor](https://openaccess.thecvf.com/content/CVPR2023/papers/Kweon_Weakly_Supervised_Semantic_Segmentation_via_Adversarial_Learning_of_Classifier_and_CVPR_2023_paper.pdf)  by [Hyeokjun Kweon](https://github.com/sangrockEG) and [Sung-Hoon Yoon](https://github.com/sunghoonYoon).
 
 # Prerequisite
-* Tested on Ubuntu 18.04, with Python 3.8, PyTorch 1.8.2, CUDA 11.4, both on single gpu.
+* Tested on Ubuntu 18.04, with Python 3.8, PyTorch 1.8.2, CUDA 11.4, single gpu.
 * You can create conda environment with the provided yaml file.
 ```
 conda env create -f wsss_recon.yaml
