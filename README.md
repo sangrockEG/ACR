@@ -5,7 +5,7 @@ Official repository for CVPR 2023 paper: [WSSS via Adversarial Learning of Class
 * Tested on Ubuntu 18.04, with Python 3.8, PyTorch 1.8.2, CUDA 11.4, both on both single and multi gpu.
 * You can create conda environment with the provided yaml file.
 ```
-conda env create -f wsss_new.yaml
+conda env create -f wsss_recon.yaml
 ```
 * [The PASCAL VOC 2012 development kit](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/):
 You need to specify place VOC2012 under ./data folder.
