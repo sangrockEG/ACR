@@ -21,7 +21,7 @@ You need to place the weights as ./pretrained/resnet_38d.params.
 * Please specify the name of your experiment.
 * Training results are saved at ./experiment/[exp_name]
 ```
-python train.py --name [exp_name] --model recon_cvpr23
+python train_pl.py --name [exp_name] --exp recon_cvpr23
 ```
 ### Evaluation for CAM
 ```
