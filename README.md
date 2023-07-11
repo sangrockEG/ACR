@@ -2,7 +2,7 @@
 Official repository for CVPR 2023 paper: [WSSS via Adversarial Learning of Classifier and Reconstructor](https://openaccess.thecvf.com/content/CVPR2023/papers/Kweon_Weakly_Supervised_Semantic_Segmentation_via_Adversarial_Learning_of_Classifier_and_CVPR_2023_paper.pdf)  by [Hyeokjun Kweon](https://github.com/sangrockEG) and [Sung-Hoon Yoon](https://github.com/sunghoonYoon).
 
 # Prerequisite
-* Tested on Ubuntu 18.04, with Python 3.8, PyTorch 1.8.2, CUDA 11.4, both on both single and multi gpu.
+* Tested on Ubuntu 18.04, with Python 3.8, PyTorch 1.8.2, CUDA 11.4, both on single gpu.
 * You can create conda environment with the provided yaml file.
 ```
 conda env create -f wsss_recon.yaml
@@ -13,9 +13,8 @@ You need to specify place VOC2012 under ./data folder.
 You need to place the weights as ./pretrained/resnet_38d.params.
 
 ## Usage
-> With the following code, you can generate pseudo labels to train the segmentation network.
-> 
-> This code includes  [AffinityNet](https://github.com/jiwoon-ahn/psa)
+> With the following code, you can generate CAMs (seeds) to train the segmentation network.
+> For the further refinement, refer [RIB](https://github.com/jbeomlee93/RIB)
 
 ### Training
 * Please specify the name of your experiment.
@@ -27,6 +26,8 @@ python train_pl.py --name [exp_name] --exp recon_cvpr23
 ```
 python evaluation.py --name [exp_name] --task cam --dict_dir dict
 ```
+* Pretrained weight (PASCAL, seed: 59.9% mIoU) can be downloaded [here](https://drive.google.com/drive/folders/1Ak7eAs8Y8ujjv8TKIp-qCW20fgiIWTc2?usp=sharing).
+
 ## Citation
 If our code be useful for you, please consider citing our CVPR 2023 paper using the following BibTeX entry.
 ```
