@@ -28,7 +28,7 @@ python train.py --name [exp_name] --model recon_cvpr23
 python evaluation.py --name [exp_name] --task cam --dict_dir dict
 ```
 ## Citation
-If our code be useful for you, please consider citing our ECCV paper using the following BibTeX entry.
+If our code be useful for you, please consider citing our CVPR 2023 paper using the following BibTeX entry.
 ```
 @inproceedings{kweon2023weakly,
   title={Weakly Supervised Semantic Segmentation via Adversarial Learning of Classifier and Reconstructor},
